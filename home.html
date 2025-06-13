@@ -1,46 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Home - AtivaMente</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
 </head>
-<body>
-  <header>
-    <h1>AtivaMente</h1>
+<body class="home-layout">
+  <aside class="sidebar">
+    <h2>AtivaMente</h2>
     <nav>
-      <a href="index.html">Início</a>
-      <a href="home.html">Home</a>
-      <a href="login.html">Login</a>
-      <a href="cadastro.html">Cadastro</a>
+      <a href="#">🔍 Busca</a>
+      <a href="#">🛠 Serviços</a>
+      <a href="#">⭐ Avaliações</a>
+      <a href="#">📞 Contato</a>
+      <a href="#">⚙️ Configuração</a>
+      <a href="#">👤 Seu perfil</a>
     </nav>
-  </header>
+  </aside>
 
-  <main>
-    <section class="banner">
-      <h2>Conectamos Talento & Experiência ao Mercado</h2>
-      <p>Profissionais 39+ com conhecimento e empresas que valorizam resultados.</p>
-      <a class="botao" href="cadastro.html">Junte-se agora</a>
-    </section>
+  <div class="main-content">
+    <header class="topbar">
+      <nav>
+        <a href="#">Página Inicial</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+        <input type="text" placeholder="Busque na página">
+      </nav>
+    </header>
 
-    <section class="publico">
-      <h3>Para Profissionais</h3>
-      <p>Cadastre-se, preencha seu perfil e seja encontrado por quem valoriza sua trajetória profissional.</p>
-    </section>
+    <main>
+      <section class="hero">
+        <h1>Descubra novos profissionais</h1>
+        <p>Busque por profissionais na sua região</p>
+        <input type="text" placeholder="Que tipo de serviço precisa?" />
+        <button>Buscar</button>
+        <div class="botoes">
+          <button>Página inicial</button>
+          <button>Serviços</button>
+          <button>Avaliações</button>
+        </div>
+      </section>
 
-    <section class="publico">
-      <h3>Para Empresas</h3>
-      <p>Encontre talentos experientes, com habilidades práticas e maturidade profissional.</p>
-    </section>
+      <section class="avaliados">
+        <h2>Profissionais mais bem avaliados</h2>
+        <button>Ver todos</button>
+        <div class="cards">
+          <div class="card"><small>Licensed</small><p>Electrician</p><strong>John Smith</strong><br>⭐ 5 stars</div>
+          <div class="card"><small>Certified</small><p>Plumber</p><strong>Emma Brown</strong><br>⭐ 4.8 stars</div>
+          <div class="card"><small>Experienced</small><p>Graphic Designer</p><strong>Lucas White</strong><br>⭐ 5 stars</div>
+        </div>
+      </section>
 
-    <section class="chamada">
-      <h3>Vamos começar?</h3>
-      <a class="botao" href="cadastro.html">Cadastrar-se gratuitamente</a>
-    </section>
-  </main>
+      <section class="feedback">
+        <h2>O que seus clientes estão dizendo?</h2>
+        <p>Veja os relatórios de avaliação</p>
+        <button>Ler os relatórios</button>
+        <div class="comentarios">
+          <div>⭐ Alice Johnson — Serviço maravilhoso</div>
+          <div>⭐ Bob Lee — Excelente serviço, super recomendo</div>
+          <div>⭐ Sara Miller — Muito bom, chamaria de novo!</div>
+        </div>
+      </section>
 
-  <footer>
-    <p>&copy; 2025 AtivaMente. Projeto Integrador.</p>
-  </footer>
+      <section class="estatisticas">
+        <h2>Estatísticas do profissional</h2>
+        <p>Veja crescimento e satisfação</p>
+        <button>Veja os detalhes</button>
+        <div class="metrics">
+          <div>Total de serviços: <strong>500</strong></div>
+          <div>Clientes satisfeitos: <strong>95%</strong></div>
+          <div>Trabalhos feitos: <strong>1200</strong></div>
+          <div>Usuários ativos: <strong>300</strong></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 AtivaMente</p>
+      <nav><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></nav>
+    </footer>
+  </div>
 </body>
 </html>
