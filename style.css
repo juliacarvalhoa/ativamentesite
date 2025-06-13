@@ -1,0 +1,75 @@
+/* style.css - AtivaMente */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #2F9C95;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #2F9C95;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover,
+a.button:hover {
+  background-color: #00796B;
+}
+
+a {
+  color: #2F9C95;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.button {
+  text-align: center;
+  background-color: #2F9C95;
+  padding: 0.8rem;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
