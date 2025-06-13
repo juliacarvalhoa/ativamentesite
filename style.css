@@ -51,19 +51,77 @@ footer {
   text-align: center;
   margin-top: 2rem;
 }
-.banner {
-  background-color: #2f9c95;
-  color: white;
-  padding: 2rem 1rem;
+body.home-layout {
+  display: flex;
+  font-family: 'Inter', sans-serif;
 }
-.banner h2 {
-  margin-top: 0;
+.sidebar {
+  width: 200px;
+  background: #f1f1f1;
+  padding: 1rem;
+  min-height: 100vh;
 }
-.publico {
-  padding: 2rem 1rem;
-  background-color: #fff;
+.sidebar h2 {
+  font-size: 1.5rem;
 }
-.chamada {
-  background-color: #e0f7f5;
-  padding: 2rem 1rem;
+.sidebar nav a {
+  display: block;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: #333;
+}
+.topbar {
+  background: #ffffff;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.topbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar input {
+  padding: 0.5rem;
+}
+.main-content {
+  flex-grow: 1;
+}
+main {
+  padding: 2rem;
+}
+.hero, .avaliados, .feedback, .estatisticas {
+  margin-bottom: 3rem;
+}
+.hero input, .hero button {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.7rem;
+  width: 100%;
+  max-width: 400px;
+}
+.botoes button {
+  margin: 0.5rem;
+}
+.cards {
+  display: flex;
+  gap: 1rem;
+}
+.card {
+  background: #f4f4f4;
+  padding: 1rem;
+  width: 200px;
+  border-radius: 8px;
+}
+.comentarios div {
+  background: #f9f9f9;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+.metrics div {
+  margin: 0.5rem 0;
+}
+footer {
+  background: #e0e0e0;
+  padding: 1rem;
+  text-align: center;
 }
