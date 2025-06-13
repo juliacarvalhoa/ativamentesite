@@ -51,6 +51,23 @@ footer {
   text-align: center;
   margin-top: 2rem;
 }
+.banner {
+  background-color: #2f9c95;
+  color: white;
+  padding: 2rem 1rem;
+}
+.banner h2 {
+  margin-top: 0;
+}
+.publico {
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+.chamada {
+  background-color: #e0f7f5;
+  padding: 2rem 1rem;
+}
+
 body.home-layout {
   display: flex;
   font-family: 'Inter', sans-serif;
