@@ -1,95 +1,42 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f6f6f6;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f8f8;
   color: #333;
-}
-header {
-  background-color: #2f9c95;
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav a {
-  color: #fff;
-  margin-left: 1rem;
-  text-decoration: none;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-main {
-  text-align: center;
-  padding: 3rem 1rem;
-}
-h2 {
-  color: #2f9c95;
-}
-input, select, button {
-  display: block;
-  margin: 1rem auto;
-  padding: 0.8rem;
-  width: 80%;
-  max-width: 400px;
-  font-size: 1rem;
-}
-.botao, button {
-  background-color: #2f9c95;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-button:hover, .botao:hover {
-  background-color: #00796b;
-}
-footer {
-  background-color: #e0e0e0;
-  padding: 1rem;
-  text-align: center;
-  margin-top: 2rem;
-}
-.banner {
-  background-color: #2f9c95;
-  color: white;
-  padding: 2rem 1rem;
-}
-.banner h2 {
-  margin-top: 0;
-}
-.publico {
-  padding: 2rem 1rem;
-  background-color: #fff;
-}
-.chamada {
-  background-color: #e0f7f5;
-  padding: 2rem 1rem;
 }
 
 body.home-layout {
   display: flex;
-  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
 }
+
+/* Sidebar */
 .sidebar {
   width: 200px;
-  background: #f1f1f1;
-  padding: 1rem;
-  min-height: 100vh;
+  background: #2f9c95;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .sidebar h2 {
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 .sidebar nav a {
   display: block;
-  margin: 1rem 0;
+  margin: 0.8rem 0;
   text-decoration: none;
-  color: #333;
+  color: white;
+  font-weight: 500;
 }
+
+/* Topbar */
 .topbar {
-  background: #ffffff;
-  padding: 1rem;
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
   border-bottom: 1px solid #ccc;
 }
 .topbar nav {
@@ -97,48 +44,116 @@ body.home-layout {
   justify-content: space-between;
   align-items: center;
 }
+.topbar nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #333;
+}
 .topbar input {
   padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
+
+/* Main layout */
 .main-content {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 main {
   padding: 2rem;
 }
+
+/* Seções */
 .hero, .avaliados, .feedback, .estatisticas {
   margin-bottom: 3rem;
+  text-align: center;
 }
+
 .hero input, .hero button {
   display: block;
-  margin: 1rem 0;
-  padding: 0.7rem;
+  margin: 1rem auto;
+  padding: 0.8rem;
   width: 100%;
   max-width: 400px;
 }
-.botoes button {
-  margin: 0.5rem;
-}
-.cards {
+.botoes {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
+.botoes button {
+  padding: 0.6rem 1.2rem;
+  background-color: #2f9c95;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.botoes button:hover {
+  background-color: #00796b;
+}
+
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
 .card {
-  background: #f4f4f4;
+  background: #ffffff;
   padding: 1rem;
   width: 200px;
   border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+.card strong {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.comentarios {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 .comentarios div {
   background: #f9f9f9;
   padding: 1rem;
-  margin: 0.5rem 0;
+  min-width: 200px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.metrics {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 .metrics div {
-  margin: 0.5rem 0;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.05);
+  min-width: 160px;
+  text-align: center;
 }
+
 footer {
-  background: #e0e0e0;
+  background-color: #e0e0e0;
   padding: 1rem;
   text-align: center;
+  margin-top: auto;
+}
+footer a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 0.5rem;
 }
