@@ -1,25 +1,26 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <title>Login - AtivaMente</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>AtivaMente</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="cadastro.html">Cadastro</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Login</h2>
-    <form>
-      <input type="email" placeholder="E-mail" required />
-      <input type="password" placeholder="Senha" required />
-      <button type="submit">Entrar</button>
-    </form>
-  </main>
-</body>
-</html>
+<form id="loginForm">
+  <label for="username">Usuário</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="password">Senha</label>
+  <input type="password" id="password" name="password" required>
+
+  <button type="submit">Entrar</button>
+</form>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const username = this.username.value.trim();
+  const password = this.password.value.trim();
+
+  if (!username || !password) {
+    alert('Preencha todos os campos.');
+    return;
+  }
+  
+  alert(`Login feito com sucesso! Usuário: ${username}`);
+  // Aqui você pode redirecionar para a página perfil, por exemplo:
+  window.location.href = 'perfil.html';
+});
+</script>
